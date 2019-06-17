@@ -28,7 +28,7 @@ public class AliSmsService {
      * @return SendSmsResponse
      * @throws ClientException
      */
-    private SendSmsResponse sendSms(String phone, String signName,
+    public SendSmsResponse sendSms(String phone, String signName,
                                     String templateCode, String templateParam, String outId)
             throws ClientException {
         SendSmsRequest request = new SendSmsRequest();
