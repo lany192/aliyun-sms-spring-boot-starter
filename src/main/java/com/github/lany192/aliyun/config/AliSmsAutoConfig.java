@@ -17,10 +17,8 @@ public class AliSmsAutoConfig {
     @Bean
     @ConditionalOnMissingBean
     public IAcsClient aliSmsClient(AliSmsProperties properties) throws ClientException {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou",
-                properties.getAccessKeyId(), properties.getAccessSecret());
-        DefaultProfile.addEndpoint("cn-hangzhou", "cn-hangzhou",
-                properties.getProduct(), properties.getDomain());
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", properties.getAccessKeyId(), properties.getAccessSecret());
+        DefaultProfile.addEndpoint("cn-hangzhou", properties.getProduct(), properties.getDomain());
         //可自助调整超时时间
         System.setProperty("sun.net.client.defaultConnectTimeout", "10000");
         System.setProperty("sun.net.client.defaultReadTimeout", "10000");
