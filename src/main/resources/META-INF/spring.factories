@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.github.lany192.aliyun.config.AliSmsAutoConfig
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.github.lany192.aliyun.config.AliyunSmsAutoConfig
