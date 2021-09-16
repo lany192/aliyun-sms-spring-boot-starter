@@ -1,3 +1,5 @@
+不再更新！推荐使用官方版本，阿里云短信 https://github.com/alibaba/spring-cloud-alibaba/wiki/sms
+
 # aliyun-sms-spring-boot-starter
 阿里云短信集成aliyun-sms-spring-boot-starter
 
